@@ -1,5 +1,3 @@
-import { COSMETICS } from "./CosmeticSchemas";
-
 const ANIMATION_DURATIONS: Record<string, number> = {
   rainbow: 4000,
   "bright-rainbow": 4000,
@@ -9,6 +7,13 @@ const ANIMATION_DURATIONS: Record<string, number> = {
   neon: 3000,
   lava: 6000,
   water: 6200,
+};
+
+const COSMETICS = {
+  flag: {
+    layers: {},
+    color: {},
+  },
 };
 
 export function renderPlayerFlag(flag: string, target: HTMLElement) {
